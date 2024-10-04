@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="duration-150">
     <!-- HEADER -->
     <header class=" py-3 shadow-sm">
         <div class="container justify-between items-center flex">
@@ -28,47 +28,58 @@
             </a>
 
 
-            <!-- projects -->
-            <a href="./projects.html"
-                class="font-medium font-mainFont hover:bg-black shadow-sm hover:text-white rounded-md  ease-linear px-3 py-2 duration-100  border-black border text-sm  ">
-                Projects
-            </a>
+            <div class="space-x-4 flex justify-between items-center">
+
+                <!-- projects -->
+                <a href="./projects.html"
+                    class="font-medium hover:shadow-xl project font-mainFont hover:bg-black drop-shadow-md hover:text-white rounded-md  ease-linear px-3 py-2 duration-100  border-black border text-sm  ">
+                    Projects
+                </a>
+
+                <!-- dark mode -->
+                <button class="dark shadow-inner  rounded-full inset-10 border border-black duration-150 p-0">
+                    <img class=" rounded-full p-0 drop-shadow-md bg-black  " src="./src/img/dark-mode.png" width="35"
+                        height="35" alt="Dark mode btn">
+                </button>
+            </div>
 
 
         </div>
     </header>
 
     <!-- main -->
-    <main class="py-16">
+    <main class="py-10 sm:py-11 ">
 
-        <div class="container pb-12">
+        <div class="container pb-12 ">
 
-            <div class="flex mb-5">
+            <div class="flex flex-col items-center sm:flex-row sm:mb-5 ">
                 <!-- my image -->
-                <img src="./src/img/its-me.png" class="mr-7" width="150" height="150" alt="My image">
+                <img src="./src/img/its-me.png" class="sm:mr-7 mr-0" width="150" height="150" alt="My image">
 
-                <div class="flex flex-col justify-between py-3">
+                <div class="flex  items-center  sm:items-start flex-col space-y-3 sm:justify-start sm:py-3 py-2  ">
                     <h2 class="text-4xl font-bold font-mainFont">Mirodil To'lamirzayev</h2>
-                    <h3 class="font-mainFont text-gray-600 font-medium leading-[-0px] text-2xl">Social networks:</h3>
+                    <h3 class="font-mainFont text-gray-600 font-medium  text-2xl">Social networks:
+                    </h3>
 
-                    <ul class="flex items-center space-x-3">
-                        <li>
-                            <a target="_blank" href="https://t.me/mirodil_web/">
+                    <ul class="flex items-center space-x-2">
+                        <li class="bg-gray-200 p-1 rounded-lg hover:scale-125 duration-150 inline-block">
+                            <a target="_blank" class="block" href="https://t.me/mirodil_web/">
                                 <img src="./src/img/telegram-black-icon.svg" width="27" height="27" alt="Telegram img">
                             </a>
                         </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/mirodil-to-lamirzayev-608b93276/">
+                        <li class="bg-gray-200 p-1 rounded-lg hover:scale-125 duration-150 inline-block">
+                            <a target="_blank" class="block"
+                                href="https://www.linkedin.com/in/mirodil-to-lamirzayev-608b93276/">
                                 <img src="./src/img/linkedin-square-icon.svg" width="27" height="27" alt="Telegram img">
                             </a>
                         </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com/mirodil_web/">
+                        <li class="bg-gray-200 p-1 rounded-lg hover:scale-125 duration-150 inline-block">
+                            <a target="_blank" class="block" href="https://instagram.com/mirodil_web/">
                                 <img src="./src/img/black-instagram-icon.svg" width="27" height="27" alt="Telegram img">
                             </a>
                         </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/mirodil-web/">
+                        <li class="bg-gray-200 p-1 rounded-lg hover:scale-125 duration-150 inline-block">
+                            <a target="_blank" class="block" href="https://github.com/mirodil-web/">
                                 <img src="./src/img/github-icon.svg" width="27" height="27" alt="Telegram img">
                             </a>
                         </li>
@@ -78,26 +89,84 @@
             </div>
 
             <!-- nima gapla -->
-            <span class="text-2xl text-gray-700">Life is simple, we make it complicated.</span>
+            <div class="container flex justify-center sm:justify-start">
+                <span class="text-2xl text-gray-700 text-center">
+                    Life is simple, we make it
+                    complicated.
+                </span>
+            </div>
 
         </div>
 
-        <div class="container flex justify-center">
-            <h3 class="text-2xl mb-5 font-bold font-Chakra ">About Me</h3>
+        <div class="container mb-6 flex justify-center ">
+            <h3 class="text-2xl  font-bold font-Chakra py-2 drop-shadow-md ">About Me</h3>
         </div>
-        <div class="container flex justify-between w-full">
-            <div class=" flex items-center flex-col mr-10">
 
+        <div class="container flex  flex-col justify-between w-full">
+
+            <!-- Skills -->
+            <div class=" w-full mb-6">
+                <h4 class="font-mainFont font-bold text-lg mb-5">My skills:</h4>
+
+                <ul class="flex gap-5 items-center flex-wrap">
+                    <li class="  ">
+                        <img src="./src/img/html.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/css.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/sass.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/bootstrap.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/tailwind.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/js.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/react.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/redux.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/github.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/git.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                    <li class="  ">
+                        <img src="./src/img/figma.png" class=" bg-gray-200 p-1 rounded-md shadow-lg  " width="65"
+                            height="75" alt="Skills img">
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" flex items-center border   flex-col  rounded-md  shadow-lg p-5 pl-7">
                 <!-- about text -->
-                <ul class="space-y-4 font-Chakra font-semibold">
-                    <li class="list-disc">
+                <ul class="space-y-4 font-Chakra font-semibold  w-full ">
+                    <li class="list-disc  my-about-list">
                         Salom! Men frontend dasturchiman. Bir necha yildan beri web-saytlar va ilovalar yaratish
                         bilan shug'ullanaman. Asosan HTML, CSS, JavaScript, va React bilan ishlayman. Mening asosiy
                         vazifam –
                         web-saytlarnifoydalanuvchilar uchun chiroyli, qulay va tez ishlaydigan qilish.
 
                     </li>
-                    <li class="list-disc">
+                    <li class="list-disc  my-about-list">
                         Dizayn jihatdan ham, texnik tomondan ham saytlarimni eng yaxshi holatda chiqishi uchun harakat
                         qilaman. Yani, saytning qanday ko'rinishidan tortib, qanday ishlashigacha e’tibor beraman.
                         Saytlarning mobil
@@ -106,7 +175,7 @@
                         moslashib ishlaydi.
                     </li>
 
-                    <li class="list-disc">
+                    <li class="list-disc  my-about-list">
                         Men uchun eng muhimi – foydalanuvchilar saytni ishlatishda hech qanday qiyinchilik
                         sezmasliklari.
                         Shuning uchun, yaratgan loyihalarimda har doim soddalik va qulaylikka intilaman. Sayt nafaqat
@@ -114,7 +183,7 @@
                         tushunarli va yoqimli ko'rinishda bo'lishi kerak, deb hisoblayman.
                     </li>
 
-                    <li class="list-disc">
+                    <li class="list-disc  my-about-list">
                         Texnologiyalar tez o'zgarib turadi, shuning uchun doim yangiliklarni kuzatib boraman va yangi
                         bilimlarni o'rganishga harakat qilaman. Oldinga intilib, yaxshi web-ilovalar va veb-saytlar
                         yaratishni maqsad qilganman.
@@ -122,35 +191,19 @@
 
                 </ul>
             </div>
-
-            <!-- Skills -->
-            <div>
-                <h4 class="font-mainFont font-bold text-xl mb-5">My skills:</h4>
-                <div class=" grid grid-cols-3 gap-4">
-                    <img src="./src/img/html.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/css.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/sass.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/bootstrap.png" class="drop-shadow-lg " width="270" height="270"
-                        alt="Skills img">
-                    <img src="./src/img/tailwind.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/js.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/react.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/redux.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/github.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/git.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-                    <img src="./src/img/figma.png" class="drop-shadow-lg " width="270" height="270" alt="Skills img">
-
-                </div>
-            </div>
         </div>
+
     </main>
 
     <!-- footer -->
-    <footer class=" bottom-0 shadow-lg w-full py-5 ">
+    <footer class=" bottom-0 shadow-lg w-full py-4 ">
         <div class="container flex justify-center ">
             <p class="text-gray-500 text-xs font-mainFont">&copy; 2024 Mirodil To'lamirzayev</p>
         </div>
     </footer>
+
+    <!-- scripts -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
